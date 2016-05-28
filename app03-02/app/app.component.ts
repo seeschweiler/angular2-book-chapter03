@@ -1,5 +1,5 @@
-import {Component} from 'angular2/core';
-import {NgStyle} from 'angular2/common';
+import {Component} from '@angular/core';
+import {NgStyle} from '@angular/common';
 
 @Component({
   selector: 'my-app',
