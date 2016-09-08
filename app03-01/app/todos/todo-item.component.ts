@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Todo} from './todo';
+import {Todo} from './shared/todo.model';
 
 @Component({
   selector: 'todo-item',
@@ -28,7 +28,7 @@ import {Todo} from './todo';
   `
 })
 export class TodoItem {
-  todo: Todo;  
+  todo: Todo;
   constructor(){
   }
   deleteTodo() {

@@ -36,20 +36,19 @@ import {NgStyle} from '@angular/common';
         </div>
       </div>
     </div>
-    `,
-    directives: [NgStyle]
+    `
 })
 export class AppComponent {
   color: String;
   bgcolor: String;
   fontSize: Number;
-  
+
   constructor() {
     this.color = "black";
     this.bgcolor = "white";
     this.fontSize = 12;
   }
-  
+
   applyStyles(color, bgcolor, fontSize) {
     this.color = color;
     this.bgcolor = bgcolor;

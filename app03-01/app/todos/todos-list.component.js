@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var todo_item_component_1 = require('./todo-item.component');
 var TodosList = (function () {
     function TodosList() {
     }
@@ -17,8 +16,7 @@ var TodosList = (function () {
         core_1.Component({
             selector: 'todos-list',
             inputs: ['todos'],
-            template: "\n    <ul class=\"list-group\">\n      <div *ngFor=\"let todo of todos\">\n        <li *ngIf=\"todo.completed == false\" class=\"list-group-item\">\n           <todo-item [todo]=\"todo\" ></todo-item>\n        </li>\n      </div>\n    </ul>\n  ",
-            directives: [todo_item_component_1.TodoItem]
+            template: "\n    <ul class=\"list-group\">\n      <div *ngFor=\"let todo of todos\">\n        <li *ngIf=\"todo.completed == false\" class=\"list-group-item\">\n           <todo-item [todo]=\"todo\" ></todo-item>\n        </li>\n      </div>\n    </ul>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], TodosList);

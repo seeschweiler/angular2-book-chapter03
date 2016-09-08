@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
-import {Todo} from './todo';
-import {TodoItem} from './todo-item.component';
+import {Todo} from './shared/todo.model';
 
 @Component({
   selector: 'todos-list',
@@ -13,11 +12,10 @@ import {TodoItem} from './todo-item.component';
         </li>
       </div>
     </ul>
-  `,
-  directives: [TodoItem]
+  `
 })
 export class TodosList {
-  todos: Array<Todo>;  
+  todos: Array<Todo>;
   constructor(){
   }
 }

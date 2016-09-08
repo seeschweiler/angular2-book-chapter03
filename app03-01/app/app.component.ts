@@ -1,8 +1,5 @@
 import {Component} from '@angular/core';
-
-import {TodosList} from './todos-list.component';
-import {AddTodo} from './add-todo.component';
-import {Todo} from './todo';
+import {Todo} from './todos/shared/todo.model';
 
 @Component({
    selector: 'my-app',
@@ -11,8 +8,7 @@ import {Todo} from './todo';
      <h5>Number of Todos: <span class="badge">{{todos.length}}</span></h5>
      <todos-list [todos]="todos"></todos-list>
      <add-todo [todos]="todos"></add-todo>
-   `,
-   directives: [TodosList, AddTodo]
+   `
 })
 export class AppComponent {
    todos: Array<Todo>;

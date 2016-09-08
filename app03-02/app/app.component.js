@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
 var AppComponent = (function () {
     function AppComponent() {
         this.color = "black";
@@ -24,8 +23,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <div class=\"panel panel-default\">\n      <div class=\"panel-heading\">\n        <h3 class=\"panel-title\">Set Styles</h3>\n      </div>\n      <div class=\"panel-body\">\n        <div class=\"form-group\">\n          <label for=\"color\">Color:</label>\n          <input type=\"text\" name=\"color\" value=\"{{color}}\" #colorinput>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"color\">Background Color:</label>\n          <input type=\"text\" name=\"bgcolor\" value=\"{{bgcolor}}\" #bgcolorinput>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"fontSize\">Font Size:</label>\n          <input type=\"text\" name=\"fontSize\" value=\"{{fontSize}}\" #fontinput>\n        </div>\n        <div>\n          <button class=\"btn btn-default\" (click)=\"applyStyles(colorinput.value, bgcolorinput.value, fontinput.value)\">Apply Styles</button>\n        </div>\n      </div>\n    </div>\n    <div class=\"panel panel-default\">\n      <div class=\"panel-heading\">\n        <h3 class=\"panel-title\">Result</h3>\n      </div>\n      <div class=\"panel-body\">\n        <div [style.font-size.px]=\"fontSize\" [ngStyle]=\"{'color': color, 'background-color': bgcolor}\" align=\"center\">\n          This is the result!\n        </div>\n      </div>\n    </div>\n    ",
-            directives: [common_1.NgStyle]
+            template: "\n    <div class=\"panel panel-default\">\n      <div class=\"panel-heading\">\n        <h3 class=\"panel-title\">Set Styles</h3>\n      </div>\n      <div class=\"panel-body\">\n        <div class=\"form-group\">\n          <label for=\"color\">Color:</label>\n          <input type=\"text\" name=\"color\" value=\"{{color}}\" #colorinput>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"color\">Background Color:</label>\n          <input type=\"text\" name=\"bgcolor\" value=\"{{bgcolor}}\" #bgcolorinput>\n        </div>\n        <div class=\"form-group\">\n          <label for=\"fontSize\">Font Size:</label>\n          <input type=\"text\" name=\"fontSize\" value=\"{{fontSize}}\" #fontinput>\n        </div>\n        <div>\n          <button class=\"btn btn-default\" (click)=\"applyStyles(colorinput.value, bgcolorinput.value, fontinput.value)\">Apply Styles</button>\n        </div>\n      </div>\n    </div>\n    <div class=\"panel panel-default\">\n      <div class=\"panel-heading\">\n        <h3 class=\"panel-title\">Result</h3>\n      </div>\n      <div class=\"panel-body\">\n        <div [style.font-size.px]=\"fontSize\" [ngStyle]=\"{'color': color, 'background-color': bgcolor}\" align=\"center\">\n          This is the result!\n        </div>\n      </div>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

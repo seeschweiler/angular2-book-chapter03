@@ -25,16 +25,15 @@ import {NgClass} from '@angular/common';
         </div>
       </div>
     </div>
-    `,
-    directives: [NgClass]
+    `
 })
 export class AppComponent {
   isActive: boolean;
-  
+
   constructor() {
     this.isActive = false;
   }
-  
+
   changeStyle() {
     this.isActive = !this.isActive;
   }
